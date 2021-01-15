@@ -8,7 +8,8 @@ App.get('/users', (req, res) => {
     res.json({
       messager: "thiago morgado",
       Projet: 'Ecoleta com typescript',
-      Autho: 'Thiago do nascimento morgado'
+      Autho: 'Thiago do nascimento morgado',
+      yaer: '29'
     })
 });
 
