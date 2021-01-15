@@ -1,16 +1,12 @@
 import express from 'express';
+import Routes from './routes';
+import routes from './routes';
 
-// criando aplicação
 const App = express();
 
-// rota de listagem 
-App.get('/users', (req, res) => {
-    res.json({
-      messager: "thiago morgado",
-      Projet: 'Ecoleta com typescript',
-      Autho: 'Thiago do nascimento morgado',
-      yaer: '29'
-    })
-});
+App.use(express.json())
+App.use(Routes);
+
+
 
 App.listen(3333)
